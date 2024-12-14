@@ -1,0 +1,92 @@
+/* Reset default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Background image */
+body {
+    background-image: url('background.jpg'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Gallery container */
+#gallery-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 photos per row */
+    gap: 10px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto; /* Allow scrolling if necessary */
+    height: calc(100vh - 40px); /* Fullscreen minus padding */
+    box-shadow: 0 0 10px rgba(176, 155, 155, 0.3);
+}
+
+/* Individual photos */
+#gallery-container img {
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+#gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Overlay for enlarged photo */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#overlay img {
+    max-width: 70%;
+    max-height: 75%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+#overlay.hidden {
+    display: none;
+}
+
+#close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+}
+footer {
+    position: fixed; /* Keeps the footer at the bottom of the screen */
+    bottom: 0;
+    left: 0;
+    width: 100%; /* Stretches footer across the page */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1rem;
+    z-index: 1000; /* Ensures it appears above other elements */
+}
+
+footer p {
+    margin: 0;
+}
