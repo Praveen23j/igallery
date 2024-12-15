@@ -2,6 +2,10 @@
 body, html {
     margin: 0;
     padding: 0;
+    height: 100%; /* Ensure body and html fill the viewport */
+    display: flex; /* Use flexbox to center the gallery */
+    justify-content: center; /* Horizontally center the gallery */
+    align-items: center; /* Vertically center the gallery */
     overflow: hidden;
 }
 
@@ -17,12 +21,10 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr); /* 5 photos per row */
     gap: 10px;
-    margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    overflow-y: auto; /* Allow scrolling if necessary */
-    height: calc(100vh - 40px); /* Fullscreen minus padding */
     box-shadow: 0 0 10px rgba(176, 155, 155, 0.3);
+    justify-items: center; /* Center images within their cells */
 }
 
 /* Individual photos */
@@ -74,6 +76,7 @@ body {
     cursor: pointer;
     z-index: 1100;
 }
+
 footer {
     position: fixed; /* Keeps the footer at the bottom of the screen */
     bottom: 0;

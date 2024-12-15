@@ -45,7 +45,7 @@ pic.html
 
     <!-- Footer -->
     <footer>
-        <p> Designed and developed by [SONA.S (24900459)]</p>
+        <p> Designed and developed by [praveen (24900824)]</p>
     </footer>
 
     <script src="gallery.js"></script> <!-- Link to JavaScript -->
@@ -151,8 +151,7 @@ gallery.js
 
 // List of image paths (Replace with your own images)
 const photoPaths = [
-    'kh.jpg', 'rajinikanth.jpg', 'vijay.jpg', 'ajith.jpg', 'srk.jpg',
-    'srk.jpg', 'vjs.jpg', 'vdk.jpg', 'sam.jpg', 'priyankachopra.avif'
+     'v1.jpeg', 'v2.webp','v3.jpg','v4.avif','v5.avif'
 ];
 
 // Get references to the gallery container and overlay elements
@@ -186,8 +185,9 @@ overlay.addEventListener('click', (event) => {
 });
 ```
 
-## OUTPUT:
-![Screenshot (70)](https://github.com/user-attachments/assets/90115963-3425-4f9b-ab03-92a7779e4eef)
+## OUTPUT
+![alt text](<Screenshot 2024-12-15 225808.png>)
+
 
 ## RESULT:
 The program for designing an interactive image gallery using HTML, CSS and JavaScript is executed successfully.
